@@ -11,7 +11,7 @@ html {
 body {
   color: #444;
   font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 p {
@@ -34,3 +34,51 @@ h2 {
   font-weight: 100;
 }
 
+.post {
+  display: grid;
+  max-width: 800px;
+  margin: 2rem auto;
+  grid-template-columns: 3fr 12fr 5fr;
+  /* Implicit grid är när man inte definierar både rader och kolumner */
+  /* I det här fallet blir då raderna implicita */
+  row-gap: 1rem;
+  column-gap: 5rem;
+  
+}
+
+/* Alla direkta-barn som ligger i .post*/
+.post > * {
+    grid-column: 2 / 3;
+}
+
+.post > figure {
+   grid-column: 1 / -1 ;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+.post > blockquote {
+  grid-column: 1 / -1;
+  font-size: 6rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.tip {
+  background-color: #fafafa;
+  padding: 2rem;
+  grid-row: span 3;
+  place-self: center;
+  /* align-self: start; */
+
+}
+
+.tip-right {
+  grid-column: 3 / -1 ;
+}
+
+.tip-left {
+  grid-column: 1 / 2;
+}
