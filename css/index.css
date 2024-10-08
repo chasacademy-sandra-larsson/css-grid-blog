@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #444;
+  font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+
+a {
+  color: black;
+}
+
+h1,
+h2 {
+  font-size: 8rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
